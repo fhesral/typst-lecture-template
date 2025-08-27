@@ -275,11 +275,8 @@
               ]
                 + text(link-color)[#abbr #chapter-here.]
                 + if it.element.numbering != none {
-                  text(link-color, numbering(it.element.numbering, ..it.element.counter.at(
-                    it.element.location(),
-                  )))
+                  text(link-color, [#numbering(it.element.numbering, ..it.element.counter.at(it.element.location())). ])
                 }
-                + [. ]
                 + text(link-color, it.element.caption.body),
             )
             if it.fill != none {
