@@ -1,6 +1,7 @@
 // TODO:
 // -> Make mybox() more variable: e.g. dont make header obligatory for remarks and make more extra-boxes possible
 // -> Work on Outline spacing
+// convert 0-level-headings to level-1-headings
 
 
 //default cover-func called in default-argument for coverfunc() in conf()

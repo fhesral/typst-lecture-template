@@ -1,0 +1,3 @@
+- [] Change level-0-headings to level-1-headings
+- [] Make ```typ #mybox()``` more versatile (Custom numbering, Optional Titlebox,...)
+- [] Configure Outline style
