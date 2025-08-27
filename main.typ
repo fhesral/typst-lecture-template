@@ -110,6 +110,13 @@
     lecture-name: "Example Lecture",
   ),
 )
+#show raw.where(lang: "typ"): set block(
+  breakable: true,
+  fill: rgb(10, 10, 10, 10),
+  radius: (top-left: 5pt, rest: 5pt),
+  inset: 5pt,
+  width: 100%,
+)
 
 // start of actual lecture content
 #new-lecture(26, 8)[
@@ -208,9 +215,7 @@
   == The Template
 
   Adding
-  ```typ
-  #show: conf
-  ```
+  #box(radius: 5pt, fill: rgb("#f0f0f0"), stroke: rgb("#f0f0f0"), inset: (x: 4pt), ```typ #show: conf```)
   to the preamble after importing it, already gives a much nicer result. A lot has happened now, because all default values and settings of the template were loaded. You must change one of these settings urgently:\
   The parameter ```typ theorem-config``` controls the numbering, styling and more of all created environments. In our case it should look like this:
   ```typ
@@ -223,8 +228,8 @@
       ),
     ),
   )
-  Since `theorem` and `theoremr`share the same `kind` there dont need to be more environments listed.
   ```
+  Since `theorem` and `theoremr` share the same `kind` there dont need to be more environments listed.
 
   #chapter[Configuring the template]
 
